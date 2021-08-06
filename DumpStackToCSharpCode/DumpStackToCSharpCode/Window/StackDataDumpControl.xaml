@@ -150,7 +150,7 @@
                 </ScrollViewer>
 
                 <Grid Grid.Row="4">
-                    <Label Grid.Row="1" Grid.Column="0" Content="Busy ..." Name="BusyLabel" Visibility="Hidden"
+                    <Label Grid.Row="1" Grid.Column="0" Content="Hang on..." Name="BusyLabel" Visibility="Hidden"
                        Background="{DynamicResource VsBrush.EnvironmentBackgroundGradient}"
                        FontFamily="{DynamicResource VsBrush.EnvironmentFontFamily}"
                        Foreground="{DynamicResource {x:Static vsshell:VsBrushes.ToolWindowTextKey}}" 

@@ -32,14 +32,14 @@ namespace DumpStackToCSharpCode.Options
         [Category("General")]
         [DisplayName("Max objects to analyze")]
         [Description("Max objects to analyze on stack (equivalent to iteration count)")]
-        [DefaultValue(400)]
-        public int MaxObjectsToAnalyze { get; set; } = 400;
+        [DefaultValue(20000000)]
+        public int MaxObjectsToAnalyze { get; set; } = 20000000;
 
         [Category("General")]
         [DisplayName("Max generation time")]
         [Description("After this timespan generation will be stopped")]
-        [DefaultValue(400)]
-        public TimeSpan MaxGenerationTime { get; set; } = TimeSpan.FromSeconds(10);
+        [DefaultValue(4000)]
+        public TimeSpan MaxGenerationTime { get; set; } = TimeSpan.FromSeconds(4000);
 
         [Category("General")]
         [DisplayName("Clear dump on start")]

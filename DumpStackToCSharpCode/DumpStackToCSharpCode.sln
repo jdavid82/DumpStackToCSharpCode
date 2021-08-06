@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29020.237
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DumpStackToCSharpCode", "DumpStackToCSharpCode\DumpStackToCSharpCode.csproj", "{4F500551-7672-439A-B8DF-3B97BC263188}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DumpStackToCSharpCodeFork", "DumpStackToCSharpCode\DumpStackToCSharpCodeFork.csproj", "{4F500551-7672-439A-B8DF-3B97BC263188}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DumpStackToCSharpCodeTests", "DumpStackToCSharpCodeTests\DumpStackToCSharpCodeTests.csproj", "{23C9F17F-6916-4341-B308-B5D5B0133B71}"
 EndProject

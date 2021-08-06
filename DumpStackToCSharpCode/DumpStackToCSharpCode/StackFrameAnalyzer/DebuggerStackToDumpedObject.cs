@@ -1,4 +1,4 @@
-﻿using DumpStackToCSharpCode.Resources;
+﻿using DumpStackToCSharpCodeFork.Resources;
 using EnvDTE;
 using DumpStackToCSharpCode.ObjectInitializationGeneration.CodeGeneration.Factory;
 using DumpStackToCSharpCode.ObjectInitializationGeneration.Type;

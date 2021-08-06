@@ -97,17 +97,17 @@ namespace DumpStackToCSharpCode.StackFrameAnalyzer
                 if (HasExceedMaxGenerationTime(generationTime))
                 {
                     Trace.WriteLine($">>>>>>>>>>>> seconds {generationTime.Elapsed.TotalSeconds} breaking");
-                    return new ObjectOnStack(mainObject, DumpStackToCSharpCode.Resources.ErrorMessages.GenerationTimeExceeded);
+                    return new ObjectOnStack(mainObject, DumpStackToCSharpCodeFork.Resources.ErrorMessages.GenerationTimeExceeded);
                 }
 
                 if (currentAnalyzedObjects > _maxObjectsToAnalyze)
                 {
-                    return new ObjectOnStack(mainObject, DumpStackToCSharpCode.Resources.ErrorMessages.MaxObjectToAnalyzeExceeded);
+                    return new ObjectOnStack(mainObject, DumpStackToCSharpCodeFork.Resources.ErrorMessages.MaxObjectToAnalyzeExceeded);
                 }
 
                 if (currentObjectDepth > _maxObjectDepth)
                 {
-                    return new ObjectOnStack(mainObject, DumpStackToCSharpCode.Resources.ErrorMessages.MaxObjectDepthExceeded);
+                    return new ObjectOnStack(mainObject, DumpStackToCSharpCodeFork.Resources.ErrorMessages.MaxObjectDepthExceeded);
                 }
                 var dataMemberName = dataMember.Name;
                 var dataMemberType = dataMember.Type;

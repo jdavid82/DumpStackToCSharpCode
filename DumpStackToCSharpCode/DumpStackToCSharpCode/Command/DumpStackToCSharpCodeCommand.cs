@@ -11,7 +11,6 @@ using Task = System.Threading.Tasks.Task;
 using DumpStackToCSharpCode.CurrentStack;
 using System.Collections.Generic;
 using System.Linq;
-using DumpStackToCSharpCode.Window;
 using System.Windows.Controls;
 using DumpStackToCSharpCode.ObjectInitializationGeneration.Constructor;
 using static DumpStackToCSharpCode.Options.DialogPageProvider;
