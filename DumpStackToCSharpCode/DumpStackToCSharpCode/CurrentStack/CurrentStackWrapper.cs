@@ -9,6 +9,7 @@ namespace DumpStackToCSharpCode.CurrentStack
         public IReadOnlyCollection<CurrentExpressionOnStack> CurrentExpressionOnStacks { get; private set; }
         public IReadOnlyCollection<CurrentExpressionOnStack> RefreshCurrentLocals(DTE2 dte)
         {
+            Microsoft.VisualStudio.Shell.ThreadHelper.ThrowIfNotOnUIThread();
             var locals = dte?.Debugger?.CurrentStackFrame?.Locals;
 
             if (locals == null)

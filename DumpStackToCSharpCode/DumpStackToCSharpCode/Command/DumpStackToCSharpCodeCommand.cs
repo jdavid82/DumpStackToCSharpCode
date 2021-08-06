@@ -268,11 +268,19 @@ namespace DumpStackToCSharpCode.Command
 
         private async Task RefreshUI()
         {
-            var vsUiShell = (IVsUIShell)await package.GetServiceAsync(typeof(IVsUIShell));
-            if (vsUiShell != null)
+            await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
+            try
             {
-                int hr = vsUiShell.UpdateCommandUI(0);
-                Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure(hr);
+                var vsUiShell = (IVsUIShell)await package.GetServiceAsync(typeof(IVsUIShell));
+                if (vsUiShell != null)
+                {
+                    int hr = vsUiShell.UpdateCommandUI(0);
+                    Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure(hr);
+                }
+            }
+            catch (Exception e)
+            {
+                _stackDataDumpControl.LogException(e);
             }
         }
     }
